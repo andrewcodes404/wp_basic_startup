@@ -1,0 +1,10 @@
+
+sass --watch sass/style.scss:style-custom.css
+
+browser-sync start -p "http://blanco1:8888/" --files="**/*" 
+
+or with no notifictaion
+browser-sync start -p "http://blanco1:8888/" --files="**/*"  --no-notify
+
+or simple style it down below .css
+#__bs_notify__ { top:95% !important; right: 10px !important; border-radius: 15px !important; height:60px !important; }

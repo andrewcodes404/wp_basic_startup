@@ -1,0 +1,205 @@
+
+nav {
+    width: 95%;
+    max-width: 1400px;
+    height: 60px;
+    margin: 0 auto 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .nav-logo {
+    width: 200px;
+    // font-size: 30px;
+    @include fontSize(30px);
+  
+  }
+  
+  .hamburger-cont {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 2.5%;
+    height: 60px;
+  
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .menu-btn {
+  
+    @include media-sml {
+      display: none;
+    }
+  
+    ;
+  
+    font-size: 30px;
+    cursor: pointer;
+  
+    &:hover {
+      color: $hover;
+    }
+  }
+  
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  
+  }
+  
+  .fade-out {
+    animation-name: fadeOut;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    ;
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  
+  }
+  
+  .fade-in {
+    animation-name: fadeIn;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    ;
+  }
+  
+  .fa-bars {
+    color: black;
+  }
+  
+  .fa-times {
+    color: white;
+  
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  
+  .nav-menu {
+    display: none;
+  
+    @include media-sml {
+      display: block;
+    }
+  
+    ;
+  
+    a,
+    a:link,
+    a:visited,
+    a:active {
+  
+      padding-left: 1rem;
+      text-decoration: none;
+      color: black;
+  
+      &:hover {
+        color: $hover;
+      }
+    }
+  
+  }
+  
+  
+  
+  
+  .nav-menu-mobile {
+  @include media-sml{
+    display: none;
+  };
+  
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(black, .8);
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    a,
+    a:link,
+    a:visited,
+    a:active {
+  
+      font-size: 60px;
+      color: white;
+      text-decoration: none;
+  
+      padding: .5rem 0;
+      width: 100%;
+      text-align: center;
+      transition: .2s;
+  
+      &:hover {
+        color: $hover;
+        background-color: #fff;
+      }
+    }
+  }
+  
+  
+  // FOOTER -- FOOTER -- FOOTER -- FOOTER -- 
+  
+  .push-down{
+    flex: 1;
+  }
+  
+  footer {
+    
+    background-color: lightgrey;
+  }
+  
+  .footer-content{
+    height: 110px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .footer-left{
+    
+    font-size: 40px;
+  }
+  
+  .footer-right{
+    text-align: center;
+  }
